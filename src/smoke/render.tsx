@@ -81,9 +81,9 @@ export function runSmokeRender(): SmokeResult {
   }
 
   // Fresh learner: no progress anywhere.
-  check('/', ['CitizenSE', 'SQ3R', 'Kapitel'])
+  check('/', ['CitizenSE', 'SQ3R', 'Kapitel', 'Färgtema', 'Ljust', 'Mörkt', 'System'])
   check('/repetition', ['Repetera', 'Inget att repetera just nu'])
-  check('/om', ['SQ3R', 'Sverige i fokus'])
+  check('/om', ['SQ3R', 'Sverige i fokus', 'Färgtema'])
 
   // Every chapter overview and every SQ3R step of every section.
   for (const { chapter, section } of allSections) {

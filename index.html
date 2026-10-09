@@ -3,11 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
       content="CitizenSE – läs och lär inför medborgarskapsprovet med SQ3R-metoden."
     />
     <title>CitizenSE – SQ3R för medborgarskapsprovet</title>
+    <script>
+      // Sätt temat innan första målningen så att fel tema aldrig hinner blinka.
+      // Samma nyckel och logik som src/theme/theme.ts – håll dem i synk.
+      ;(function () {
+        try {
+          var saved = window.localStorage.getItem('citizense.theme.v1')
+          var preference = saved === 'light' || saved === 'dark' || saved === 'system' ? saved : 'system'
+          var dark =
+            preference === 'system'
+              ? window.matchMedia('(prefers-color-scheme: dark)').matches
+              : preference === 'dark'
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+        } catch (error) {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

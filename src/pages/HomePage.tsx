@@ -15,12 +15,12 @@ export function HomePage() {
   return (
     <div className="content">
       <section className="hero">
-        <p className="hero__eyebrow">Medborgarskapsprovet · SQ3R</p>
+        <p className="hero__eyebrow">Medborgarskapsprovet</p>
         <h1>Lär dig det svenska samhället – med en metod som gör att det fastnar</h1>
         <p className="hero__lead">
-          CitizenSE bygger på SQ3R: du skaffar översikt, ställer frågor, läser, återberättar ur
-          minnet och repeterar. Innehållet följer kapitel för kapitel i UHR:s utbildningsmaterial
-          ”Sverige i fokus”.
+          CitizenSE kombinerar effektiva studiemetoder, som SQ3R och spaced repetition, med
+          gamification för att göra lärandet roligare och hjälpa dig att minnas mer. Innehållet
+          följer UHR:s utbildningsmaterial <em>Sverige i fokus</em>.
         </p>
         <div className="row">
           {nextUp ? (

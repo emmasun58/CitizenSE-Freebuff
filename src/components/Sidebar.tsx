@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { chapters } from '../content'
 import { useProgress } from '../learning/ProgressContext'
+import { ThemeToggle } from './ThemeToggle'
 
 export function Sidebar() {
   const { stageOf } = useProgress()
@@ -10,7 +11,7 @@ export function Sidebar() {
       <div className="sidebar__brand">
         <NavLink to="/">
           <p className="sidebar__title">CitizenSE</p>
-          <p className="sidebar__tagline">SQ3R-läsning inför medborgarskapsprovet</p>
+          <p className="sidebar__tagline">Studieteknik och repetition inför medborgarskapsprovet</p>
         </NavLink>
       </div>
 
@@ -70,6 +71,11 @@ export function Sidebar() {
           </NavLink>
         </li>
       </ul>
+
+      <div className="sidebar__section-label">Utseende</div>
+      <div className="sidebar__footer">
+        <ThemeToggle />
+      </div>
     </aside>
   )
 }

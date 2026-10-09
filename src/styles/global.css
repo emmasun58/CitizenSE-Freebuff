@@ -4,6 +4,7 @@
  * ------------------------------------------------------------------ */
 
 :root {
+  color-scheme: light;
   --bg: #f6f7f9;
   --surface: #ffffff;
   --surface-soft: #f0f3f7;
@@ -14,6 +15,7 @@
   --accent: #1d5fa8;
   --accent-soft: #e7f0fb;
   --accent-strong: #14477c;
+  --on-accent: #ffffff;
   --success: #1f7a4d;
   --success-soft: #e6f4ec;
   --danger: #b3261e;
@@ -393,7 +395,7 @@ button {
 
 .step-rail__button--done .step-rail__index {
   background: var(--success);
-  color: #fff;
+  color: var(--on-accent);
   border-color: var(--success);
 }
 
@@ -413,7 +415,7 @@ button {
 .step-rail__button--active .step-rail__index {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .step-rail__label {
@@ -760,7 +762,7 @@ button {
 .btn--primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .btn--primary:hover {
@@ -910,4 +912,80 @@ button {
   .main {
     padding: 1.5rem 1.25rem 3rem;
   }
+}
+
+/* ------------------------------------------------------------------ *
+ * Tema: ljust / mörkt
+ *
+ * Preferensen (ljust | mörkt | system) sparas i localStorage och sätts som
+ * data-theme på <html> – dels av ett litet skript i index.html innan första
+ * målningen (så att temat aldrig blinkar), dels av ThemeProvider.
+ * Här byts bara samma CSS-variabler ut, så ingen komponent behöver känna
+ * till vilket tema som är aktivt.
+ * ------------------------------------------------------------------ */
+
+html {
+  background: var(--bg);
+}
+
+body {
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0f1419;
+  --surface: #171e26;
+  --surface-soft: #1e2731;
+  --border: #2b3642;
+  --border-strong: #3c4a58;
+  --text: #e7edf3;
+  --text-muted: #9aa7b4;
+  --accent: #83b6ea;
+  --accent-soft: #17304a;
+  --accent-strong: #a9cef4;
+  --on-accent: #0c1726;
+  --success: #4cc38a;
+  --success-soft: #13291f;
+  --danger: #f0736a;
+  --danger-soft: #2e1614;
+  --warn: #e0aa4d;
+  --warn-soft: #2b2213;
+  --shadow: 0 1px 2px rgb(0 0 0 / 45%), 0 8px 22px rgb(0 0 0 / 32%);
+}
+
+/* --- Temaväljare (sidebar) ----------------------------------------- */
+
+.sidebar__footer {
+  padding: 0.4rem 1.25rem 0;
+}
+
+.theme-toggle {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem;
+}
+
+.theme-toggle__option {
+  flex: 1 1 0;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  border-radius: 999px;
+}
+
+.theme-toggle__option:hover {
+  color: var(--text);
+}
+
+.theme-toggle__option--active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
 }

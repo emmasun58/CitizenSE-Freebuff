@@ -24,7 +24,7 @@ export const CAPABILITIES: Capability[] = [
     readyInCode:
       'Varje avsnitt har redan `questions` (Question-steget) och `recite`-aktiviteter med stabila id:n.',
     nextStep:
-      'Lägg till en frågebank per sektion i `Section` och slumpa frågor i en egen vy utanför SQ3R-flödet.',
+      'Lägg till en frågebank per sektion i `Section` och slumpa frågor i en egen vy utanför läsflödet.',
   },
   {
     id: 'progress-tracking',
