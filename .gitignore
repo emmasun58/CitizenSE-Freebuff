@@ -1,0 +1,9 @@
+node_modules
+dist
+.research
+*.local
+.DS_Store
+.env
+.env.*
+.tmp-smoke
+*.tsbuildinfo
