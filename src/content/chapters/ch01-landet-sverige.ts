@@ -524,7 +524,7 @@ export const chapter01: Chapter = {
             'Nämner exempel som pappersmassa, papper, kartong eller trä.',
           ],
           modelAnswer:
-            'Produkter från skogen säljs till många länder och har varit en viktig del av Sveriges handel under lång tid. Exempel på produkter är pappersmassa (cellulosa), papper och kartong samt trä som används i byggindustrin. Mer än hälften av Sveriges yta täcks av skog.',
+            'Produkter från skogen säljs till många länder och har varit en viktig del av Sveriges handel under lång tid. Exempel på produkter är pappersmassa (cellulosa), papper, kartong och trä som används i byggindustrin. Mer än hälften av Sveriges yta täcks av skog.',
         },
       ],
       review: {
@@ -660,7 +660,7 @@ export const chapter01: Chapter = {
         {
           kind: 'note',
           tone: 'tip',
-          text: 'Så kan man minska utsläppen i vardagen: åka kollektivt (buss eller tåg), spara el och värme samt sortera sopor och återvinna.',
+          text: 'Så kan man minska utsläppen i vardagen: åka kollektivt (buss eller tåg), spara el och värme och sortera sopor för återvinning.',
         },
       ],
       recite: [

@@ -23,8 +23,8 @@ export function AboutPage() {
         </p>
         <p className="small muted" style={{ marginBottom: 0 }}>
           CitizenSE är inte en officiell tjänst från UHR eller Skolverket. Appen sammanfattar
-          materialet kapitel för kapitel och hänvisar varje avsnitt till kapitel och sidor i
-          originalet, så att du alltid kan kontrollera innehållet mot källan.
+          materialet kapitel för kapitel och visar vilka sidor varje avsnitt bygger på, så att du
+          kan jämföra med originalet.
         </p>
       </Card>
 
@@ -39,11 +39,27 @@ export function AboutPage() {
         </p>
       </Card>
 
-      <Card label="Innehållsstruktur och utbyggnad">
+      <Card label="Översättning">
+        <p>
+          Du kan översätta ord och meningar i studiematerialet till ditt eget språk. På datorn
+          dubbelklickar du på ett ord. På mobilen håller du in ett ord, eller markerar en mening.
+        </p>
+        <p>
+          En liten ruta visar den svenska texten och översättningen. Du kan välja bland engelska,
+          arabiska, kinesiska (förenklad), finska, turkiska, ukrainska och ryska, och valet sparas
+          till nästa gång. Stäng rutan genom att klicka utanför den eller trycka på Escape.
+        </p>
+        <p className="small muted" style={{ marginBottom: 0 }}>
+          Översättningarna hämtas från en översättningstjänst på servern. Om tjänsten inte är
+          påslagen visar rutan ett tydligt meddelande i stället för en gissad översättning.
+        </p>
+      </Card>
+
+      <Card label="Teknisk översikt (för utvecklare)">
         <p className="small muted">
-          Kapitel och avsnitt har stabila id:n, och varje avsnitt innehåller färdiga block för
-          översikt, frågor, läsning, repetition och sammanfattning. Det gör att funktionerna nedan
-          kan byggas ovanpå innehållet utan att det behöver skrivas om.
+          Varje kapitel och avsnitt har ett fast id, och varje avsnitt innehåller färdiga delar för
+          översikt, frågor, läsning, repetition och sammanfattning. Därför kan funktionerna nedan
+          byggas ovanpå innehållet utan att något behöver göras om.
         </p>
         <table className="section-list" style={{ width: '100%', borderCollapse: 'collapse' }}>
           <tbody>

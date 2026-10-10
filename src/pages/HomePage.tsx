@@ -47,15 +47,15 @@ export function HomePage() {
         <a href={SOURCE_DOCUMENT.url} target="_blank" rel="noreferrer">
           Öppna originalet hos UHR
         </a>
-        . Texterna i CitizenSE är sammanfattningar som följer källans kapitel och avsnitt; varje
-        avsnitt anger kapitel och sidor. Provet baseras på UHR:s material.
+        . Texterna i CitizenSE är sammanfattningar av källan. Varje avsnitt visar vilket
+        kapitel och vilka sidor det bygger på. Provet utgår från UHR:s material.
       </p>
 
       <div className="stat-grid">
         <Stat value={chapters.length} label="Kapitel" />
         <Stat value={totalSectionCount()} label="Avsnitt" />
         <Stat value={`${summary.percentReviewed} %`} label="Avsnitt genomgångna" />
-        <Stat value={summary.totalAnswers} label="Repetitionssvar" />
+        <Stat value={summary.totalAnswers} label="Svar totalt" />
         <Stat value={`${summary.accuracy} %`} label="Andel rätt" />
       </div>
 
@@ -71,7 +71,7 @@ export function HomePage() {
       </Card>
 
       {summary.sectionsStarted > 0 ? (
-        <Card label="Din progress">
+        <Card label="Dina framsteg">
           <ProgressBar percent={summary.percentReviewed} label="Avsnitt genomgångna" />
           <p className="small muted" style={{ marginTop: '0.9rem' }}>
             {summary.sectionsReviewed} av {summary.totalSections} avsnitt är genomgångna.{' '}
@@ -84,7 +84,7 @@ export function HomePage() {
               Till repetitionen
             </Link>
             <button type="button" className="btn btn--ghost" onClick={reset}>
-              Nollställ min progress
+              Rensa mina framsteg
             </button>
           </div>
         </Card>
@@ -120,7 +120,7 @@ export function HomePage() {
 
       <Card label="Ännu inte byggt" soft>
         <p className="small muted">
-          Det här är avsiktligt kvar till senare. Innehållsstrukturen är förberedd för dem.
+          Det här är inte klart än. Det kommer senare, och innehållet är redan förberett för det.
         </p>
         <ul className="small muted">
           {NOT_IMPLEMENTED_YET.map((item) => (

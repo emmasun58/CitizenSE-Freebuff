@@ -28,8 +28,8 @@ export function SurveyStep({ section }: { section: Section }) {
 
       <Card label="Viktiga begrepp">
         <p className="small muted">
-          Du behöver inte kunna de här begreppen ännu. Läs igenom dem nu, så känner du igen dem när
-          du kommer till Read-steget.
+          Du behöver inte kunna de här begreppen än. Titta på dem nu, så känner du igen dem när du
+          läser.
         </p>
         <dl className="concept-list">
           {survey.keyConcepts.map((concept) => (

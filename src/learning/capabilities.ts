@@ -22,18 +22,18 @@ export const CAPABILITIES: Capability[] = [
     title: 'Övningsfrågor per avsnitt',
     status: 'seam-ready',
     readyInCode:
-      'Varje avsnitt har redan `questions` (Question-steget) och `recite`-aktiviteter med stabila id:n.',
+      'Varje avsnitt har redan `questions` (steget Frågor) och `recite`-aktiviteter med stabila id:n.',
     nextStep:
-      'Lägg till en frågebank per sektion i `Section` och slumpa frågor i en egen vy utanför läsflödet.',
+      'Lägg till fler frågor per avsnitt i `Section` och visa dem i en egen vy utanför läsflödet.',
   },
   {
     id: 'progress-tracking',
-    title: 'Progressning',
+    title: 'Framsteg och statistik',
     status: 'seam-ready',
     readyInCode:
-      '`src/learning/progress.ts` definierar ProgressState, ProgressStore och sammanställningar per sektion.',
+      '`src/learning/progress.ts` samlar allt om framsteg: ProgressState, ProgressStore och sammanställningar per avsnitt.',
     nextStep:
-      'Byt `localStorageProgress` mot ett store som är kopplat till inloggad användare och scopar data på användar-id.',
+      'Byt ut `localStorageProgress` mot en lagring som hör ihop med den inloggade användaren, så att var och en bara ser sina egna framsteg.',
   },
   {
     id: 'saved-questions',
@@ -58,7 +58,7 @@ export const CAPABILITIES: Capability[] = [
     readyInCode:
       '`src/learning/review.ts` bygger en repetitionskö av felbesvarade aktiviteter, sorterad på senaste försök.',
     nextStep:
-      'Byt ut sorteringen mot ett intervallscherma (till exempel 1, 3, 7, 21 dagar) och lagra nästa repetitionsdatum i ProgressState.',
+      'Byt ut sorteringen mot fasta intervall (till exempel 1, 3, 7 och 21 dagar) och spara nästa repetitionsdatum i ProgressState.',
   },
   {
     id: 'ai-explanations',

@@ -103,7 +103,7 @@ function MultipleChoiceActivity({ item, sectionId, chapterId }: ItemProps & { it
           <p>{item.explanation}</p>
           {!correct ? (
             <p className="small">
-              Frågan läggs till i din repetition och kommer tillbaka under Review.
+              Frågan läggs till i din repetition och kommer tillbaka under Repetera.
             </p>
           ) : null}
         </div>
@@ -158,8 +158,8 @@ function ShortAnswerActivity({ item, sectionId, chapterId }: ItemProps & { item:
           <p>{item.modelAnswer}</p>
           {!checked ? (
             <p className="small">
-              Frågan läggs till i din repetition. Du kan komma tillbaka till Read-steget om du vill
-              läsa igen.
+              Frågan läggs till i din repetition. Du kan gå tillbaka till Läs om du vill läsa
+              igen.
             </p>
           ) : null}
         </div>
@@ -229,7 +229,7 @@ function ExplainActivity({ item, sectionId, chapterId }: ItemProps & { item: Exp
           onClick={finish}
           disabled={revealed || value.trim().length === 0}
         >
-          Rätta mig själv
+          Rätta själv
         </button>
         {!revealed ? (
           <span className="small muted">{value.trim().length} tecken</span>
@@ -277,7 +277,7 @@ export function ReciteStep({ section, chapterId }: { section: Section; chapterId
       <Card soft label="Så funkar det här steget">
         <p style={{ marginBottom: 0 }}>
           Försök svara ur minnet. Det är själva återberättandet – inte att läsa om – som gör att du
-          minns. Alla frågor du svarar fel på samlas automatiskt under Review.
+          minns. Alla frågor du svarar fel på samlas automatiskt under Repetera.
         </p>
       </Card>
 

@@ -31,8 +31,8 @@ export function ReviewPage() {
 
       <h1>Repetera</h1>
       <p className="muted" style={{ maxWidth: 'var(--measure)' }}>
-        Här samlas alla frågor du svarat fel på. Repetitionen är kopplad till din progress: svarar du
-        rätt här försvinner frågan ur kön.
+        Här samlas alla frågor du svarat fel på. Svarar du rätt här försvinner frågan från
+        listan.
       </p>
 
       <div className="stat-grid">
@@ -42,7 +42,7 @@ export function ReviewPage() {
         <Stat value={`${summary.accuracy} %`} label="Andel rätt" />
       </div>
 
-      <Card label="Total progress">
+      <Card label="Dina framsteg totalt">
         <ProgressBar percent={summary.percentReviewed} label="Avsnitt genomgångna" />
         <p className="small muted" style={{ marginTop: '0.75rem', marginBottom: 0 }}>
           {summary.sectionsReviewed} av {summary.totalSections} avsnitt är genomgångna.

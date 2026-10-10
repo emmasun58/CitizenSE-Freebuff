@@ -6,10 +6,10 @@ import { Badge, Card, ProgressBar } from '../components/ui/primitives'
 
 const STAGE_LABEL: Record<string, { text: string; tone: 'neutral' | 'accent' | 'success' }> = {
   'not-started': { text: 'Inte påbörjad', tone: 'neutral' },
-  surveyed: { text: 'Survey klar', tone: 'accent' },
-  questioned: { text: 'Question klar', tone: 'accent' },
-  read: { text: 'Read klar', tone: 'accent' },
-  recited: { text: 'Recite klar', tone: 'accent' },
+  surveyed: { text: 'Översikt klar', tone: 'accent' },
+  questioned: { text: 'Frågor klara', tone: 'accent' },
+  read: { text: 'Har läst', tone: 'accent' },
+  recited: { text: 'Återberättat', tone: 'accent' },
   reviewed: { text: 'Genomgången', tone: 'success' },
 }
 
@@ -60,7 +60,7 @@ export function ChapterPage() {
         </ul>
       </Card>
 
-      <Card label="Din progress i kapitlet">
+      <Card label="Dina framsteg i kapitlet">
         <ProgressBar percent={percent} label={`${reviewed} av ${chapter.sections.length} avsnitt`} />
       </Card>
 
@@ -82,7 +82,7 @@ export function ChapterPage() {
                     {section.source.pages.length > 0
                       ? `s. ${Math.min(...section.source.pages)}–${Math.max(...section.source.pages)} · `
                       : ''}
-                    {section.questions.length} frågor · {section.recite.length} repetitionsuppgifter
+                    {section.questions.length} frågor · {section.recite.length} övningsuppgifter
                   </div>
                 </div>
                 <div className="section-list__right">

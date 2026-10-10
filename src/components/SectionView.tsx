@@ -58,7 +58,7 @@ export function SectionView() {
       <div className="content">
         <div className="empty">
           <h3>Avsnittet hittades inte</h3>
-          <p>Det kan ha bytt id när innehållet uppdaterades.</p>
+          <p>Sidan finns inte. Innehållet kan ha ändrats sedan du var här.</p>
           <Link className="btn" to="/">
             Till startsidan
           </Link>

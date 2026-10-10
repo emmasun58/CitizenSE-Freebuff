@@ -1,6 +1,7 @@
 # CitizenSE UF
 
-Läs- och övningsapp för medborgarskapsprovet, byggd kring **SQ3R-metoden**.
+Läs- och övningsapp inför medborgarskapsprovet, byggd kring beprövade
+studiemetoder: **SQ3R** och repetition.
 
 Allt lärandeinnehåll utgår från UHR:s och Skolverkets officiella utbildningsmaterial
 *Sverige i fokus – utbildningsmaterial till medborgarskapsprov*
@@ -15,14 +16,51 @@ Varje avsnitt i materialet läses i fem steg:
 
 | Steg | Vad användaren gör |
 | --- | --- |
-| **Survey** | Får en översikt, avsnittets huvudteman och de viktigaste begreppen. |
-| **Question** | Får frågor att ha med sig in i läsningen – både faktasvar och reflektionsfrågor. |
-| **Read** | Läser korta block i klartext. Svåra begrepp förklaras direkt i texten. |
-| **Recite** | Återberättar ur minnet med kort svar, flervalsfrågor eller "förklara med egna ord". |
-| **Review** | Får sammanfattning, ser vilka frågor de svarat fel på och hur det hänger ihop med deras progress. |
+| **Översikt** (Survey) | Får en översikt, avsnittets huvudteman och de viktigaste begreppen. |
+| **Frågor** (Question) | Får frågor att ha med sig in i läsningen – både faktasvar och reflektionsfrågor. |
+| **Läs** (Read) | Läser korta block i klartext. Svåra begrepp förklaras direkt i texten. |
+| **Återberätta** (Recite) | Återberättar ur minnet med kort svar, flervalsfrågor eller "förklara med egna ord". |
+| **Repetera** (Review) | Får en sammanfattning, ser vilka frågor de svarat fel på och hur det hänger ihop med deras framsteg. |
 
-Repetition är kopplad till progress: allt som besvaras fel hamnar i en repetitionskö som
-nås både från avsnittets Review-steg och från den egna vyn **Repetera**.
+Repetition är kopplad till dina framsteg: allt som besvaras fel hamnar i en
+repetitionslista som nås både från avsnittets sista steg och från den egna vyn
+**Repetera**.
+
+## Översättning
+
+Den som ännu inte kan alla svenska ord kan översätta dem direkt i materialet:
+
+- **Dator:** dubbelklicka på ett ord (eller markera en mening).
+- **Mobil:** håll in ett ord, eller markera en mening med handtagen.
+
+En liten ruta visar den svenska texten och översättningen tillsammans. Målspråk:
+engelska, arabiska, kinesiska (förenklad), finska, turkiska, ukrainska och ryska.
+Valet sparas och används nästa gång. Rutan stängs med Escape, krysset eller ett
+klick utanför, och arabiska visas från höger till vänster. Rutan ritas utanför
+studieinnehållet, så att den inte stör läsningen eller SQ3R-flödet.
+
+Översättningen hämtas av en **serverfunktion** (DeepL) – aldrig direkt av
+webbläsaren. Frontend innehåller ingen nyckel. Om tjänsten inte är påslagen visar
+rutan ett tydligt meddelande i stället för en gissad översättning.
+
+### Koppla på översättningen
+
+Funktionen behöver en nyckel som bara finns på servern:
+
+| Variabel | Var | Vad |
+| --- | --- | --- |
+| `DEEPL_API_KEY` | serverhemlighet (aldrig i frontend eller git) | Nyckel från DeepL (den kostnadsfria nivån räcker) |
+| `DEEPL_API_URL` | valfri | Endast för egen drift eller tester. Standard är DeepL:s kostnadsfria API. |
+
+- **Lokalt:** starta utvecklingsservern med nyckeln i miljön, till exempel
+  `DEEPL_API_KEY=… npm run dev`. Vite monterar då samma serverfunktion på
+  `/api/translate` (se `server/vite-translate-plugin.ts`).
+- **I produktion:** `functions/api/translate.ts` blir rutten `POST /api/translate`
+  när sajten ligger på Cloudflare Pages. Sätt hemligheten i hostingpanelen.
+  Samma funktion kan monteras i vilken runtime som helst som stöder `fetch`.
+
+All logik för anropet finns i `server/translate.ts`, så byte av tjänst görs på
+ett enda ställe.
 
 ## Kom igång
 
@@ -112,8 +150,8 @@ stället.
 
 | Funktion | Redo i koden | Nästa steg |
 | --- | --- | --- |
-| Övningsfrågor per avsnitt | `questions` + `recite` med stabila id:n | Egen frågebank per sektion, egen vy utanför SQ3R |
-| Progressning | `ProgressStore` + `summarise()` | Byt localStorage mot store kopplad till inloggad användare |
+| Övningsfrågor per avsnitt | `questions` + `recite` med stabila id:n | Egen frågebank per avsnitt, egen vy utanför läsflödet |
+| Framsteg och statistik | `ProgressStore` + `summarise()` | Byt localStorage mot lagring kopplad till inloggad användare |
 | Sparade frågor | `ProgressState.savedItemIds` | Vy som läser listan och slår upp innehållet |
 | Fullständiga prov | `allSections` + rättningsbara recite-aktiviteter | Provgenerator över flera kapitel |
 | Spaced review | `review.ts` bygger repetitionskö | Intervallschema (1, 3, 7, 21 dagar) i `ProgressState` |
@@ -130,3 +168,7 @@ Vite 5 · React 18 · TypeScript (strict) · React Router · localStorage.
 Inga externa UI- eller tillståndsbibliotek – allt innehåll och all logik är
 projektets eget, vilket håller appen enkel att bygga ut och att deploya som
 statisk sajt.
+
+Översättningsfunktionen är det enda som behöver en serverfunktion
+(`server/translate.ts`), eftersom API-nyckeln aldrig får ligga i frontend.
+Resten av appen förblir statisk.

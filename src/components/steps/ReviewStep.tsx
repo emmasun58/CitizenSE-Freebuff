@@ -5,10 +5,10 @@ import { Badge, Card, ProgressBar } from '../ui/primitives'
 
 const STAGE_LABEL: Record<string, string> = {
   'not-started': 'Inte påbörjad',
-  surveyed: 'Survey klar',
-  questioned: 'Question klar',
-  read: 'Read klar',
-  recited: 'Recite klar',
+  surveyed: 'Översikt klar',
+  questioned: 'Frågor klara',
+  read: 'Har läst',
+  recited: 'Återberättat',
   reviewed: 'Klar och genomgången',
 }
 
@@ -49,7 +49,7 @@ export function ReviewStep({ section }: { section: Section }) {
         ) : null}
       </Card>
 
-      <Card label="Din progress i det här avsnittet">
+      <Card label="Dina framsteg i det här avsnittet">
         <p className="row" style={{ marginBottom: '0.75rem' }}>
           <Badge tone={stage === 'reviewed' ? 'success' : 'accent'}>{STAGE_LABEL[stage]}</Badge>
           <span className="small muted">
@@ -70,13 +70,13 @@ export function ReviewStep({ section }: { section: Section }) {
         {missed.length === 0 ? (
           <p style={{ marginBottom: 0 }}>
             {answeredCount === 0
-              ? 'Du har inte svarat på några repetitionsfrågor i det här avsnittet ännu. Gå till Recite-steget först.'
+              ? 'Du har inte svarat på några repetitionsfrågor i det här avsnittet ännu. Gå till Återberätta först.'
               : 'Inga fel i det här avsnittet. Allt du svarat på har varit rätt – bra jobbat.'}
           </p>
         ) : (
           <>
             <p className="small muted">
-              De här frågorna svarade du fel på. De ligger också i din gemensamma repetitionskö.
+              De här frågorna svarade du fel på. De finns också i listan under Repetera.
             </p>
             <ul className="theme-list">
               {missed.map(({ item, attempt }) => (

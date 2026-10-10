@@ -22,8 +22,8 @@ export function QuestionStep({ section }: { section: Section }) {
     <div>
       <Card label="Frågor du ska kunna svara på">
         <p>
-          Läs igenom frågorna innan du läser avsnittet. De hjälper dig att läsa aktivt: du letar
-          efter svaren i stället för att bara läsa igenom texten.
+          Läs frågorna först. Sedan läser du avsnittet och letar efter svaren. Då läser du mer
+          aktivt.
         </p>
         <ul className="theme-list">
           {recallQuestions.map((question) => (
@@ -38,7 +38,7 @@ export function QuestionStep({ section }: { section: Section }) {
       {reflectionQuestions.length > 0 ? (
         <Card label="Frågor att tänka kring">
           <p className="small muted">
-            De här frågorna har inget givet svar i texten. De finns för att koppla avsnittet till
+            De här frågorna har inget rätt svar i texten. De hjälper dig att koppla avsnittet till
             dina egna erfarenheter.
           </p>
           <ul className="theme-list">

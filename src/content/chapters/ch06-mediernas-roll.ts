@@ -8,7 +8,7 @@ export const chapter06: Chapter = {
     'Kapitlet handlar om medier som kan vara allt från tidningar, film, radio och tv till internet och sociala medier. Där sprids nyheter, kunskap och information som påverkar alla människor i ett samhälle.',
   learningGoals: [
     'Förklara varför medierna är fria i Sverige.',
-    'Redogöra för vad offentlighetsprincipen innebär.',
+    'Beskriva vad offentlighetsprincipen innebär.',
     'Skilja mellan reklamfinansierade medier och public service.',
     'Förklara vad källkritik är och varför det behövs.',
   ],

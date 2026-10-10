@@ -165,3 +165,45 @@ fånga krascher och tomma sidor.
    `reflection` för att koppla till läsarens eget liv.
 6. **Review ska innehålla det viktigaste** – inte en andra läsning av texten.
 7. **Nämn årtal och siffror explicit.** De är det provet prövar.
+
+
+## 8. Språk och ton
+
+All text som användaren möter ska vara enkel, tydlig och vänlig svenska. Många
+som läser materialet håller fortfarande på att lära sig svenska.
+
+**Gör så här:**
+
+- Använd vanliga, vardagliga ord och korta meningar.
+- Undvik onödigt svåra ord, formella uttryck och krångliga meningar.
+- Förklara viktiga eller svåra begrepp i enkla ord – helst där de dyker upp, med
+  ett `concept`-block.
+- Håll förklaringar, instruktioner, frågor, svarsalternativ och feedback korta
+  och lätta att förstå.
+- Bevara fakta. Förenkla språket, inte innehållet.
+- Använd samma ord för samma sak i hela appen.
+- Skriv för vuxna inför medborgarskapsprovet – enkelt, men inte barnsligt.
+
+**Tonen ska vara varm och uppmuntrande.** Läsaren ska aldrig känna sig dum för
+att den svarar fel. Skriv hellre "Inte rätt den här gången" än bara "Fel", och
+berätta vad som händer: "Frågan läggs till i din repetition och kommer tillbaka
+under Repetera."
+
+**Vanliga byten – välj det enklare ordet:**
+
+| Undvik | Använd hellre |
+| --- | --- |
+| samt | och |
+| exempelvis | till exempel |
+| numera | nu |
+| betraktas som | räknas som |
+| tillämpas | följs |
+| syftar till | vill uppnå / är till för |
+| upprätthålla | se till att … följs |
+| sedvänja | vana |
+| upprättelse | visa att något var fel |
+| främja | öka / stärka / utveckla |
+
+I gränssnittet används de svenska stegnamnen **Översikt, Frågor, Läs,
+Återberätta och Repetera**, med SQ3R-termerna (Survey, Question, Read, Recite,
+Review) inom parentes. Samma principer gäller för all framtida text i appen.

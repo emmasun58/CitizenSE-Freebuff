@@ -321,7 +321,7 @@ export const chapter08: Chapter = {
         themes: [
           {
             title: 'Lagar på arbetsmarknaden',
-            description: 'Regler om arbetstider, arbetsmiljö och semester samt avgifter för pension och sjukförsäkring.',
+            description: 'Regler om arbetstider, arbetsmiljö och semester, och avgifter för pension och sjukförsäkring.',
           },
           {
             title: 'Skatt på arbete',

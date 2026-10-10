@@ -8,7 +8,7 @@ export const chapter10: Chapter = {
     'Kapitlet handlar om hur Sverige har gått från ett fattigt jordbruksland till ett högteknologiskt välfärdssamhälle på tvåhundra år. Den förändringen har präglats av konflikter, reformer och avgörande vägval.',
   learningGoals: [
     'Beskriva övergången från jordbrukssamhälle till industrisamhälle.',
-    'Redogöra för hur Sverige blev en demokrati.',
+    'Beskriva hur Sverige blev en demokrati.',
     'Förklara vad folkhemmet och den svenska modellen är.',
     'Känna till vad som kännetecknade rekordåren.',
     'Förklara vad informationssamhället och globaliseringen innebär.',
@@ -481,7 +481,7 @@ export const chapter10: Chapter = {
         },
         {
           kind: 'paragraph',
-          text: 'Ett annat exempel gäller människor som inte ansågs passa in i samhället och som placerades på sjukhus eller andra vårdinrättningar, ibland för resten av livet. Särskilt personer med psykiska sjukdomar eller funktionsnedsättningar drabbades. Först på senare tid har Sverige gjort upp med denna mörka historia och gett viss upprättelse åt människor som drabbades.',
+          text: 'Ett annat exempel gäller människor som inte ansågs passa in i samhället och som placerades på sjukhus eller andra vårdinrättningar, ibland för resten av livet. Särskilt personer med psykiska sjukdomar eller funktionsnedsättningar drabbades. Först på senare tid har Sverige gjort upp med denna mörka historia och visat att det som hände var fel.',
         },
         { kind: 'note', tone: 'info', text: 'Andra världskriget' },
         {
@@ -577,7 +577,7 @@ export const chapter10: Chapter = {
       source: { chapter: 10, pages: [36, 37] },
       survey: {
         overview:
-          'Avsnittet handlar om den starka ekonomiska tillväxten efter andra världskriget, utbyggnaden av välfärdssamhället, invandringen och miljonprogrammet samt förändringar i jämställdhet och kultur.',
+          'Avsnittet handlar om den starka ekonomiska tillväxten efter andra världskriget, utbyggnaden av välfärdssamhället, invandringen och miljonprogrammet och förändringar i jämställdhet och kultur.',
         themes: [
           {
             title: 'Stark ekonomisk tillväxt',
@@ -747,7 +747,7 @@ export const chapter10: Chapter = {
             'Sverige blev ett invandrarland och miljonprogrammet byggdes.',
           ],
           modelAnswer:
-            'Tiden efter andra världskriget kallas rekordåren eftersom Sverige hade en stark ekonomisk tillväxt, mycket låg arbetslöshet och snabbt stigande levnadsstandard. Socialdemokraterna hade oftast regeringsmakten själva från 1945 till 1976, och tack vare den goda ekonomin kunde stora reformer genomföras. Välfärdssamhället byggdes ut med 40 timmars arbetsvecka, fem veckors semester, bättre sjukvård och äldreomsorg samt ett starkare socialt skyddsnät. Sverige blev också ett invandrarland, och miljonprogrammet byggdes för att lösa bostadsbristen.',
+            'Tiden efter andra världskriget kallas rekordåren eftersom Sverige hade en stark ekonomisk tillväxt, mycket låg arbetslöshet och snabbt stigande levnadsstandard. Socialdemokraterna hade oftast regeringsmakten själva från 1945 till 1976, och tack vare den goda ekonomin kunde stora reformer genomföras. Välfärdssamhället byggdes ut med 40 timmars arbetsvecka, fem veckors semester, bättre sjukvård och äldreomsorg och ett starkare socialt skyddsnät. Sverige blev också ett invandrarland, och miljonprogrammet byggdes för att lösa bostadsbristen.',
         },
       ],
       review: {
@@ -782,7 +782,7 @@ export const chapter10: Chapter = {
           },
           {
             title: 'Växlande regeringar',
-            description: '1976 kom den första icke-socialdemokratiska regeringen på länge.',
+            description: '1976 kom den första regeringen på länge som inte var socialdemokratisk.',
           },
           {
             title: 'Informationssamhället',

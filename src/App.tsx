@@ -8,29 +8,40 @@ import { ChapterPage } from './pages/ChapterPage'
 import { HomePage } from './pages/HomePage'
 import { ReviewPage } from './pages/ReviewPage'
 import { ThemeProvider } from './theme/ThemeContext'
+import { TranslationProvider } from './translation/TranslationContext'
 
 export function App({ progressStore }: { progressStore?: ProgressStore } = {}) {
   return (
     <ThemeProvider>
-      <ProgressProvider store={progressStore}>
-        <div className="app">
-          <Sidebar />
-          <main className="main">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/kapitel/:chapterId" element={<ChapterPage />} />
-              <Route
-                path="/kapitel/:chapterId/avsnitt/:sectionId"
-                element={<RedirectToSurvey />}
-              />
-              <Route path="/kapitel/:chapterId/avsnitt/:sectionId/:stepId" element={<SectionView />} />
-              <Route path="/repetition" element={<ReviewPage />} />
-              <Route path="/om" element={<AboutPage />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </main>
-        </div>
-      </ProgressProvider>
+      <TranslationProvider>
+        <ProgressProvider store={progressStore}>
+          <div className="app">
+            <Sidebar />
+            {/*
+              `data-translate-root` markerar området där text får översättas med
+              dubbelklick eller långt tryck. Översättningsrutan ritas utanför
+              området, så att den aldrig stör markeringen.
+            */}
+            <main className="main" data-translate-root>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/kapitel/:chapterId" element={<ChapterPage />} />
+                <Route
+                  path="/kapitel/:chapterId/avsnitt/:sectionId"
+                  element={<RedirectToSurvey />}
+                />
+                <Route
+                  path="/kapitel/:chapterId/avsnitt/:sectionId/:stepId"
+                  element={<SectionView />}
+                />
+                <Route path="/repetition" element={<ReviewPage />} />
+                <Route path="/om" element={<AboutPage />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
+              </Routes>
+            </main>
+          </div>
+        </ProgressProvider>
+      </TranslationProvider>
     </ThemeProvider>
   )
 }

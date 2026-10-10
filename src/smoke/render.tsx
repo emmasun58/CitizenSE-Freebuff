@@ -83,13 +83,16 @@ export function runSmokeRender(): SmokeResult {
   // Fresh learner: no progress anywhere.
   check('/', ['CitizenSE', 'SQ3R', 'Kapitel', 'Färgtema', 'Ljust', 'Mörkt', 'System'])
   check('/repetition', ['Repetera', 'Inget att repetera just nu'])
-  check('/om', ['SQ3R', 'Sverige i fokus', 'Färgtema'])
+  check('/om', ['SQ3R', 'Sverige i fokus', 'Färgtema', 'Översättning'])
 
   // Every chapter overview and every SQ3R step of every section.
   for (const { chapter, section } of allSections) {
     check(`/kapitel/${chapter.id}`, [chapter.title, section.title, 'Lärandemål'])
     for (const step of SQ3R_STEPS) {
-      check(`/kapitel/${chapter.id}/avsnitt/${section.id}/${step.id}`, [step.title, section.title])
+      const expected = [step.title, section.title]
+      // Read-steget visar ledtråden för översättningsfunktionen.
+      if (step.id === 'read') expected.push('dubbelklicka')
+      check(`/kapitel/${chapter.id}/avsnitt/${section.id}/${step.id}`, expected)
     }
   }
 
@@ -98,10 +101,10 @@ export function runSmokeRender(): SmokeResult {
   const seeded = seedWithWrongAnswer()
   check('/repetition', [seeded.prompt, 'Repetera'], seeded.state)
   // The seeded section is at stage "recited", so its badge must say so.
-  check('/kapitel/ch01', ['Recite klar', 'avsnitt'], seeded.state)
+  check('/kapitel/ch01', ['Återberättat', 'avsnitt'], seeded.state)
   check(
     `/kapitel/${allSections[0].chapter.id}/avsnitt/${seeded.sectionId}/review`,
-    [seeded.prompt, 'Din progress i det här avsnittet'],
+    [seeded.prompt, 'Dina framsteg i det här avsnittet'],
     seeded.state,
   )
 

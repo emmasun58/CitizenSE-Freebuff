@@ -48,7 +48,7 @@ export const chapter13: Chapter = {
           {
             term: 'Kulturarv',
             definition:
-              'Traditioner och sedvänjor som förs vidare genom generationer och uppfattas som en del av ett lands kultur.',
+              'Traditioner och vanor som förs vidare genom generationer och uppfattas som en del av ett lands kultur.',
           },
           {
             term: 'Valborgsmässoafton',
@@ -129,7 +129,7 @@ export const chapter13: Chapter = {
         },
         {
           kind: 'paragraph',
-          text: 'En hel del av årets helgdagar, som jul, påsk och pingst, kommer ur de kristna traditionerna. Många i Sverige uppfattar sådana traditioner som en viktig del av ett svenskt kulturarv även om de inte själva är troende. Ofta firar människor olika högtider tillsammans med andra, exempelvis i familjen, och flera av högtiderna är helgdagar då människor får ledigt från arbetet.',
+          text: 'En hel del av årets helgdagar, som jul, påsk och pingst, kommer ur de kristna traditionerna. Många i Sverige uppfattar sådana traditioner som en viktig del av ett svenskt kulturarv även om de inte själva är troende. Ofta firar människor olika högtider tillsammans med andra, till exempel i familjen, och flera av högtiderna är helgdagar då människor får ledigt från arbetet.',
         },
         {
           kind: 'concept',

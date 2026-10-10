@@ -8,9 +8,9 @@ export const chapter09: Chapter = {
     'Kapitlet handlar om välfärdssamhället som ska ge alla invånare en grundläggande ekonomisk och social trygghet. Välfärden finansieras genom skatter. Stat, regioner och kommuner bidrar till välfärden på olika sätt.',
   learningGoals: [
     'Förklara vad välfärdssamhället innebär och hur det finansieras.',
-    'Namnge olika slags skatter och vad de går till.',
-    'Redogöra för vad staten finansierar.',
-    'Redogöra för vad regionerna och kommunerna ansvarar för.',
+    'Nämn olika slags skatter och vad de går till.',
+    'Beskriva vad staten finansierar.',
+    'Beskriva vad regionerna och kommunerna ansvarar för.',
     'Känna till vad socialtjänsten gör.',
   ],
   source: { chapter: 9, pages: [30, 31] },
@@ -185,7 +185,7 @@ export const chapter09: Chapter = {
           },
           {
             title: 'Olika slags sjukvård',
-            description: 'Primärvård, sjukhusvård samt psykiatrisk vård, rehabilitering och tandvård.',
+            description: 'Vård nära dig (primärvård), sjukhusvård, psykiatrisk vård, rehabilitering och tandvård.',
           },
           {
             title: 'Kommunernas ansvar',
@@ -334,14 +334,14 @@ export const chapter09: Chapter = {
             'Kommunerna: barnomsorg, skolor, äldreomsorg och socialtjänst; bestämmer själva sin skatt.',
           ],
           modelAnswer:
-            'Staten finansierar bland annat pensioner, sjukförsäkring, föräldraförsäkring, arbetslöshetsförsäkring, studiestöd, barnbidrag samt högre utbildning och forskning. Regionerna ansvarar främst för hälso- och sjukvården och tar ut skatt av invånarna. Kommunerna ansvarar för barnomsorg, skolor, äldreomsorg och socialtjänst, och bestämmer själva hur mycket invånarna ska betala i kommunalskatt och vad pengarna ska användas till.',
+            'Staten finansierar bland annat pensioner, sjukförsäkring, föräldraförsäkring, arbetslöshetsförsäkring, studiestöd, barnbidrag, högre utbildning och forskning. Regionerna ansvarar främst för hälso- och sjukvården och tar ut skatt av invånarna. Kommunerna ansvarar för barnomsorg, skolor, äldreomsorg och socialtjänst, och bestämmer själva hur mycket invånarna ska betala i kommunalskatt och vad pengarna ska användas till.',
         },
       ],
       review: {
         keyTakeaways: [
-          'Staten finansierar pensioner, sjukförsäkring, föräldraförsäkring, arbetslöshetsförsäkring, studiestöd, barnbidrag samt högre utbildning och forskning.',
+          'Staten finansierar pensioner, sjukförsäkring, föräldraförsäkring, arbetslöshetsförsäkring, studiestöd, barnbidrag, högre utbildning och forskning.',
           'Regionerna (21) ansvarar för hälso- och sjukvården och tar ut skatt.',
-          'Sjukvården delas in i primärvård, sjukhusvård samt psykiatrisk vård, rehabilitering och tandvård.',
+          'Sjukvården delas in i primärvård (vård nära dig), sjukhusvård, psykiatrisk vård, rehabilitering och tandvård.',
           'Kommunerna (290) ansvarar för barnomsorg, skolor, äldreomsorg och socialtjänst.',
           'Kommunerna bestämmer själva sin skattesats.',
           'Socialtjänsten ger stöd och skydd till den som behöver.',

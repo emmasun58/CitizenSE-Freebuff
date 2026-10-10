@@ -8,7 +8,7 @@ export const chapter12: Chapter = {
     'Kapitlet handlar om religion i Sverige. Sverige är en sekulär stat med lagar som respekterar allas rätt att utöva sin tro. Här gäller religionsfrihet. Människor kan fritt välja sin tro eller att inte tro. Samtidigt är det ett mångreligiöst land där bland annat de stora världsreligionerna finns representerade.',
   learningGoals: [
     'Förklara vad det innebär att Sverige är en sekulär stat.',
-    'Redogöra för religionsfrihetens historia i Sverige.',
+    'Beskriva religionsfrihetens historia i Sverige.',
     'Känna till när Svenska kyrkan skildes från staten.',
     'Beskriva religionens roll i dagens Sverige.',
     'Känna igen de fem största världsreligionerna och deras historia i Sverige.',
@@ -21,7 +21,7 @@ export const chapter12: Chapter = {
       source: { chapter: 12, pages: [42] },
       survey: {
         overview:
-          'Avsnittet förklarar vad en sekulär stat är, hur religionsfriheten växte fram i Sverige och vad skolans religionsundervisning syftar till.',
+          'Avsnittet förklarar vad en sekulär stat är, hur religionsfriheten växte fram i Sverige och vad skolans religionsundervisning vill uppnå.',
         themes: [
           {
             title: 'En sekulär stat',
@@ -37,7 +37,7 @@ export const chapter12: Chapter = {
           },
           {
             title: 'Religionskunskap i skolan',
-            description: 'Undervisningen ska ge bred förståelse och främja tolerans och respekt.',
+            description: 'Undervisningen ska ge bred förståelse och öka tolerans och respekt.',
           },
         ],
         keyConcepts: [
@@ -84,7 +84,7 @@ export const chapter12: Chapter = {
         {
           id: 'ch12-rel-q5',
           prompt:
-            'Vad syftar religionsundervisningen i skolan till, och varför är det viktigt i ett mångreligiöst land?',
+            'Vad vill religionsundervisningen i skolan uppnå, och varför är det viktigt i ett mångreligiöst land?',
           kind: 'recall',
         },
       ],
@@ -114,7 +114,7 @@ export const chapter12: Chapter = {
         },
         {
           kind: 'paragraph',
-          text: 'Undervisningen i religionskunskap i den svenska skolan ska ge elever en bred förståelse för olika religioner, trosuppfattningar och livsåskådningar från hela världen. Målet är att främja förståelse, tolerans och respekt för olikheter.',
+          text: 'Undervisningen i religionskunskap i den svenska skolan ska ge elever en bred förståelse för olika religioner, trosuppfattningar och livsåskådningar från hela världen. Målet är att öka förståelse, tolerans och respekt för olikheter.',
         },
       ],
       recite: [
@@ -175,7 +175,7 @@ export const chapter12: Chapter = {
           '1860: tillåtet att lämna Svenska kyrkan, men bara till ett annat kristet samfund.',
           '1951: religionsfrihetslagen ger frihet att välja religion eller ingen alls.',
           '2000: staten och Svenska kyrkan skildes åt.',
-          'Religionsundervisningen ska främja förståelse, tolerans och respekt.',
+          'Religionsundervisningen ska öka förståelse, tolerans och respekt.',
         ],
         mostImportant: 'Årtalen 1860, 1951 och 2000 är centrala för religionsfrihetens historia i Sverige.',
         glossary: [
@@ -305,7 +305,7 @@ export const chapter12: Chapter = {
         },
         {
           kind: 'paragraph',
-          text: 'Judendom är den minsta av världsreligionerna. Det finns flera judiska församlingar och synagogor i dagens Sverige. Dessa församlingar erbjuder olika sätt att praktisera judisk tro och kultur och spelar en viktig roll för att bevara och främja judisk tradition och gemenskap.',
+          text: 'Judendom är den minsta av världsreligionerna. Det finns flera judiska församlingar och synagogor i dagens Sverige. Dessa församlingar erbjuder olika sätt att praktisera judisk tro och kultur och spelar en viktig roll för att bevara och utveckla judisk tradition och gemenskap.',
         },
         { kind: 'note', tone: 'info', text: 'Hinduism och buddhism' },
         {
@@ -319,7 +319,7 @@ export const chapter12: Chapter = {
         },
         {
           kind: 'paragraph',
-          text: 'De svenska muslimska församlingarna och organisationerna speglar flera olika riktningar och traditioner inom islam, som sunni och shia. De muslimska församlingarna erbjuder bön, undervisning och gemenskap samt spelar en viktig roll i att bevara och främja muslimsk tradition och kultur.',
+          text: 'De svenska muslimska församlingarna och organisationerna speglar flera olika riktningar och traditioner inom islam, som sunni och shia. De muslimska församlingarna erbjuder bön, undervisning och gemenskap och spelar en viktig roll för att bevara och utveckla muslimsk tradition och kultur.',
         },
       ],
       recite: [

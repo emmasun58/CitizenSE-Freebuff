@@ -7,10 +7,10 @@ export const chapter05: Chapter = {
   intro:
     'Kapitlet handlar om lagar som alla måste följa. Lagarna finns för att samhället ska fungera och de skyddar människor. Rättsväsendet ser till att lagarna följs, utreder brott och dömer dem som bryter mot lagen. Rättssäkerhet innebär att alla behandlas lika inför lagen och har rätt till en rättvis rättegång.',
   learningGoals: [
-    'Namnge Sveriges fyra grundlagar och veta vad de skyddar.',
+    'Nämn Sveriges fyra grundlagar och veta vad de skyddar.',
     'Förklara vad allemansrätten innebär.',
     'Beskriva vad de olika delarna av rättsväsendet gör.',
-    'Redogöra för hur en brottsutredning går till.',
+    'Beskriva hur en brottsutredning går till.',
     'Känna till domstolarnas tre nivåer och vad straffmyndighetsåldern är.',
   ],
   source: { chapter: 5, pages: [16, 17, 18, 19] },
@@ -328,7 +328,7 @@ export const chapter05: Chapter = {
         {
           id: 'ch05-rat-q5',
           prompt:
-            'Varför är det viktigt att en misstänkt person betraktas som oskyldig tills den dömts? Resonera kring vad som skulle kunna gå fel annars.',
+            'Varför är det viktigt att en misstänkt person räknas som oskyldig tills den dömts? Tänk efter vad som skulle kunna gå fel annars.',
           kind: 'reflection',
         },
       ],
@@ -355,7 +355,7 @@ export const chapter05: Chapter = {
         },
         {
           kind: 'paragraph',
-          text: 'Domstolarna bedömer om någon är skyldig till brott och vilken påföljd personen i så fall ska få, till exempel böter eller fängelse. En person som är misstänkt för ett brott ska betraktas som oskyldig tills den dömts. Domstolarna hjälper också till när personer är oeniga, till exempel vid vårdnadstvister mellan föräldrar (tvistemål).',
+          text: 'Domstolarna bedömer om någon är skyldig till brott och vilken påföljd personen i så fall ska få, till exempel böter eller fängelse. En person som är misstänkt för ett brott ska räknas som oskyldig tills den dömts. Domstolarna hjälper också till när personer är oeniga, till exempel vid vårdnadstvister mellan föräldrar (tvistemål).',
         },
         {
           kind: 'list',
@@ -370,7 +370,7 @@ export const chapter05: Chapter = {
           kind: 'concept',
           term: 'Polisen',
           explanation:
-            'Polisens uppgift är att upprätthålla lag och ordning och att förebygga och utreda brott. Polisen samarbetar med skolor, kommuner, företag, föreningar och andra myndigheter för att göra samhället tryggt. Polisen gör också pass och nationella id-kort till svenska medborgare och beslutar om vissa tillstånd, till exempel för en demonstration.',
+            'Polisens uppgift är att se till att lagar och regler följs och att förebygga och utreda brott. Polisen samarbetar med skolor, kommuner, företag, föreningar och andra myndigheter för att göra samhället tryggt. Polisen gör också pass och nationella id-kort till svenska medborgare och beslutar om vissa tillstånd, till exempel för en demonstration.',
         },
         {
           kind: 'example',
@@ -459,10 +459,10 @@ export const chapter05: Chapter = {
             'Alla har rätt till en rättvis rättegång.',
             'Domstolarna är oberoende av regering och riksdag.',
             'Man har rätt till advokat och att överklaga.',
-            'En misstänkt betraktas som oskyldig tills den dömts.',
+            'En misstänkt räknas som oskyldig tills den dömts.',
           ],
           modelAnswer:
-            'Rättssäkerhet betyder att alla behandlas lika inför lagen och får en rättvis rättegång. Ingen ska dömas utan en process där bevis och fakta granskas noggrant. Domstolarna är oberoende, så regering eller riksdag kan inte bestämma hur de ska döma. Alla har rätt att försvara sig med hjälp av en advokat och att överklaga en dom. En person som är misstänkt ska betraktas som oskyldig tills den dömts.',
+            'Rättssäkerhet betyder att alla behandlas lika inför lagen och får en rättvis rättegång. Ingen ska dömas utan en process där bevis och fakta granskas noggrant. Domstolarna är oberoende, så regering eller riksdag kan inte bestämma hur de ska döma. Alla har rätt att försvara sig med hjälp av en advokat och att överklaga en dom. En person som är misstänkt ska räknas som oskyldig tills den dömts.',
         },
       ],
       review: {

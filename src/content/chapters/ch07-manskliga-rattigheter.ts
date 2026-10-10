@@ -9,7 +9,7 @@ export const chapter07: Chapter = {
   learningGoals: [
     'Förklara vad mänskliga rättigheter är och var de kommer från.',
     'Känna till vad FN:s förklaring om de mänskliga rättigheterna innehåller.',
-    'Redogöra för hur Sverige arbetar för jämställdhet.',
+    'Beskriva hur Sverige arbetar för jämställdhet.',
     'Förklara vad barnkonventionen innebär och varför den är lag i Sverige.',
     'Känna till Sveriges nationella minoriteter och minoritetsspråk.',
     'Förklara vad diskrimineringslagen förbjuder och vad DO gör.',
@@ -98,7 +98,7 @@ export const chapter07: Chapter = {
         },
         {
           kind: 'paragraph',
-          text: 'FN presenterade förklaringen om de mänskliga rättigheterna 1948. Den innehåller totalt 30 bestämmelser som kallas artiklar, och den säger att alla människor är födda fria och lika i värde och rättigheter samt har rätt till ett liv fritt från våld.',
+          text: 'FN presenterade förklaringen om de mänskliga rättigheterna 1948. Den innehåller totalt 30 bestämmelser som kallas artiklar, och den säger att alla människor är födda fria och lika i värde och rättigheter och har rätt till ett liv fritt från våld.',
         },
         { kind: 'note', tone: 'info', text: 'Alla har rätt:' },
         {
@@ -296,7 +296,7 @@ export const chapter07: Chapter = {
         { kind: 'note', tone: 'warn', text: 'Könsrelaterat våld och förtryck' },
         {
           kind: 'paragraph',
-          text: 'Våld i nära relationer och hedersrelaterat våld och förtryck är brottsligt enligt svensk lag. Våld i nära relationer kan till exempel vara att en person blir utsatt för våld av en familjemedlem, exempelvis sexuellt våld.',
+          text: 'Våld i nära relationer och hedersrelaterat våld och förtryck är brottsligt enligt svensk lag. Våld i nära relationer kan till exempel vara att en person blir utsatt för våld av en familjemedlem, till exempel sexuellt våld.',
         },
         {
           kind: 'concept',
@@ -444,7 +444,7 @@ export const chapter07: Chapter = {
         },
         {
           id: 'ch07-bar-q2',
-          prompt: 'Ge tre exempel på vad det innebär att barnkonventionen tillämpas.',
+          prompt: 'Ge tre exempel på vad det innebär att barnkonventionen följs.',
           kind: 'recall',
         },
         {
@@ -780,7 +780,7 @@ export const chapter07: Chapter = {
       source: { chapter: 7, pages: [26] },
       survey: {
         overview:
-          'Avsnittet handlar om Diskrimineringsombudsmannen (DO), vad diskrimineringslagen kräver av arbetsplatser och skolor samt vad hatbrott är.',
+          'Avsnittet handlar om Diskrimineringsombudsmannen (DO), vad diskrimineringslagen kräver av arbetsplatser och skolor, och vad hatbrott är.',
         themes: [
           {
             title: 'Diskrimineringsombudsmannen',

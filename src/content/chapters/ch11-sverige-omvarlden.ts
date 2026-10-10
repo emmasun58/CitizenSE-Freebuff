@@ -7,10 +7,10 @@ export const chapter11: Chapter = {
   intro:
     'Kapitlet handlar om Sveriges samarbete med omvärlden, det nordiska, europeiska och globala samarbetet och om Sveriges säkerhetspolitik.',
   learningGoals: [
-    'Redogöra för det nordiska samarbetet.',
+    'Beskriva det nordiska samarbetet.',
     'Förklara vad EU är och vad de fyra friheterna innebär.',
     'Känna till Europarådet och Europadomstolen.',
-    'Redogöra för FN:s syfte och vad Sida gör.',
+    'Beskriva FN:s syfte och vad Sida gör.',
     'Beskriva Sveriges försvars- och säkerhetspolitik.',
   ],
   source: { chapter: 11, pages: [39, 40, 41] },
@@ -174,7 +174,7 @@ export const chapter11: Chapter = {
             'Gemensamma beslut och lagar; de fyra friheterna.',
           ],
           modelAnswer:
-            'EU bildades efter andra världskriget för att skapa fred och stabilitet i Europa, och är ett politiskt och ekonomiskt samarbete mellan europeiska länder. För Sverige, som varit medlem sedan 1995, innebär det samarbete inom områden som jordbruk, ekonomi, miljö, handel och migration, gemensamma beslut och lagar samt de fyra friheterna – att människor kan studera, flytta, arbeta och sälja varor fritt mellan länderna.',
+            'EU bildades efter andra världskriget för att skapa fred och stabilitet i Europa, och är ett politiskt och ekonomiskt samarbete mellan europeiska länder. För Sverige, som varit medlem sedan 1995, innebär det samarbete inom områden som jordbruk, ekonomi, miljö, handel och migration, gemensamma beslut och lagar, och de fyra friheterna – att människor kan studera, flytta, arbeta och sälja varor fritt mellan länderna.',
         },
       ],
       review: {
@@ -299,14 +299,14 @@ export const chapter11: Chapter = {
         {
           kind: 'explain',
           id: 'ch11-glo-r3',
-          prompt: 'Förklara med egna ord vad FN är och vad organisationen syftar till.',
+          prompt: 'Förklara med egna ord vad FN är och vad organisationen vill uppnå.',
           checklist: [
             'En organisation där nästan alla världens länder är med.',
             'Grundades 1945 efter andra världskriget.',
             'Syfte: bevara fred, lösa konflikter, arbeta för lika värde och mänskliga rättigheter.',
           ],
           modelAnswer:
-            'FN är en organisation som grundades 1945 efter andra världskriget och där nästan alla världens länder är medlemmar. FN:s syfte är att bevara fred och säkerhet i världen, lösa konflikter och stoppa krig, arbeta för alla folks lika värde och självbestämmande samt arbeta för mänskliga rättigheter och friheter.',
+            'FN är en organisation som grundades 1945 efter andra världskriget och där nästan alla världens länder är medlemmar. FN:s syfte är att bevara fred och säkerhet i världen, lösa konflikter och stoppa krig, arbeta för alla folks lika värde och självbestämmande, och arbeta för mänskliga rättigheter och friheter.',
         },
       ],
       review: {
@@ -352,7 +352,7 @@ export const chapter11: Chapter = {
           {
             term: 'Nato',
             definition:
-              'En försvarsallians som syftar till att skydda medlemsländerna. Sverige blev medlem 2024.',
+              'En försvarsallians som vill skydda sina medlemsländer. Sverige blev medlem 2024.',
           },
           {
             term: 'Totalförsvarsplikt',
@@ -431,7 +431,7 @@ export const chapter11: Chapter = {
         },
         {
           kind: 'paragraph',
-          text: 'När Ryssland angrep Ukraina 2022 ökade oron för säkerheten i Norden. Sverige och Finland valde därför att nästan samtidigt ansöka om medlemskap i Nato – en försvarsallians som syftar till att skydda medlemsländerna. Sverige blev medlem år 2024.',
+          text: 'När Ryssland angrep Ukraina 2022 ökade oron för säkerheten i Norden. Sverige och Finland valde därför att nästan samtidigt ansöka om medlemskap i Nato – en försvarsallians som vill skydda sina medlemsländer. Sverige blev medlem år 2024.',
         },
         { kind: 'note', tone: 'info', text: 'Sveriges försvar' },
         {

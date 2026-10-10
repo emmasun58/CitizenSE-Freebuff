@@ -21,42 +21,42 @@ export const SQ3R_STEPS: Sq3rStep[] = [
   {
     id: 'survey',
     order: 1,
-    title: 'Survey – skaffa översikt',
-    shortTitle: 'Survey',
+    title: 'Skaffa översikt (Survey)',
+    shortTitle: 'Översikt',
     guidance:
-      'Läs översikten, temana och nyckelbegreppen först. Du behöver inte förstå allt – målet är att veta vad avsnittet handlar om.',
+      'Läs översikten, temana och de viktigaste begreppen först. Du behöver inte förstå allt – målet är att veta vad avsnittet handlar om.',
   },
   {
     id: 'question',
     order: 2,
-    title: 'Question – ställ frågor',
-    shortTitle: 'Question',
+    title: 'Ställ frågor (Question)',
+    shortTitle: 'Frågor',
     guidance:
-      'Gör om rubriker och teman till frågor. Frågorna blir din guide när du sedan läser – du letar aktivt efter svaren.',
+      'Gör om rubriker och teman till frågor. Frågorna hjälper dig när du läser – du letar efter svaren i stället för att bara läsa.',
   },
   {
     id: 'read',
     order: 3,
-    title: 'Read – läs avsnittet',
-    shortTitle: 'Read',
+    title: 'Läs avsnittet (Read)',
+    shortTitle: 'Läs',
     guidance:
       'Läs i korta delar och stanna vid svåra begrepp. Svåra ord förklaras direkt i texten.',
   },
   {
     id: 'recite',
     order: 4,
-    title: 'Recite – återberätta',
-    shortTitle: 'Recite',
+    title: 'Återberätta ur minnet (Recite)',
+    shortTitle: 'Återberätta',
     guidance:
-      'Svara utan att titta i texten. Är du osäker går du tillbaka till Read – det är så minnet byggs.',
+      'Svara utan att titta i texten. Är du osäker går du tillbaka till Läs – det är så minnet byggs.',
   },
   {
     id: 'review',
     order: 5,
-    title: 'Review – sammanfatta och repetera',
-    shortTitle: 'Review',
+    title: 'Sammanfatta och repetera (Review)',
+    shortTitle: 'Repetera',
     guidance:
-      'Läs sammanfattningen och gå igenom de frågor du svarat fel på. Repetitionen kopplas till din progress.',
+      'Läs sammanfattningen och gå igenom de frågor du svarat fel på. Repetitionen kopplas till dina framsteg.',
   },
 ]
 

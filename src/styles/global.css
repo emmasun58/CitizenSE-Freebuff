@@ -989,3 +989,132 @@ body {
   color: var(--text);
   box-shadow: var(--shadow);
 }
+
+/* ------------------------------------------------------------------ *
+ * Översättning
+ *
+ * Rutan följer samma färger och radier som resten av appen (CSS-variabler),
+ * så den fungerar i både ljust och mörkt läge utan egna undantag.
+ * ------------------------------------------------------------------ */
+
+.translate-popover {
+  position: fixed;
+  z-index: 60;
+  width: min(21rem, calc(100vw - 1rem));
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgb(16 32 48 / 20%);
+  padding: 0.7rem 0.8rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.translate-popover__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.translate-popover__language {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.translate-popover__label {
+  display: block;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin: 0 0 0.2rem;
+}
+
+.translate-popover__select {
+  width: 100%;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.45rem;
+}
+
+.translate-popover__close {
+  flex: 0 0 auto;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--radius-sm);
+}
+
+.translate-popover__close:hover {
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
+.translate-popover__source {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.translate-popover__body {
+  border-top: 1px solid var(--border);
+  padding-top: 0.45rem;
+}
+
+.translate-popover__status {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.translate-popover__translation {
+  margin: 0;
+}
+
+/* Arabiska skrivs från höger till vänster. */
+.translate-popover__translation--rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.translate-popover__error {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.translate-popover__error-text {
+  margin: 0;
+  color: var(--text);
+}
+
+.translate-popover__hint {
+  margin: 0.6rem 0 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* Liten ledtråd i lässteget – diskret så att den inte stör texten. */
+.translate-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.translate-hint strong {
+  color: var(--accent-strong);
+  font-weight: 700;
+}

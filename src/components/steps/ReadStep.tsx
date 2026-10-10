@@ -15,7 +15,7 @@ export function ReadStep({ section }: { section: Section }) {
 
   return (
     <article className="read">
-      <p className="row" style={{ marginBottom: '1.25rem' }}>
+      <p className="row" style={{ marginBottom: '0.9rem' }}>
         <Badge tone="accent">Läs i korta delar</Badge>
         {conceptCount > 0 ? (
           <span className="small muted">
@@ -23,6 +23,13 @@ export function ReadStep({ section }: { section: Section }) {
           </span>
         ) : null}
       </p>
+
+      {/* Översättningen är till för den som ännu inte kan alla svenska ord. */}
+      <div style={{ marginBottom: '1.25rem' }}>
+        <span className="translate-hint">
+          <strong>Översättning:</strong> dubbelklicka på ett ord, eller markera en mening.
+        </span>
+      </div>
 
       {section.read.map((block, index) => (
         <ReadBlockView key={index} block={block} />
